@@ -21,7 +21,16 @@ def main():
   if choice == "Summarize":
     st.subheader("Summary with NLP")
     raw_text = st.text_area("Enter text here")
-    st.write(raw_text)
+    summary_choice = st.selectbox(
+        "Summary Choice", ["Gensim", "Sumy Lex Rank"])
+    if st.button("Summarize"):
+      if summary_choice == "Gensim":
+        summary_result = summarize(raw_text)
+
+      elif summary_choice == "Sumy Lex Rank":
+        summary_result = sumy_summarizer(raw_text)
+
+      st.write(summary_result)
 
 
 if __name__ == '__main__':
