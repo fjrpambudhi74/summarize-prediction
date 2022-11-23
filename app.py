@@ -40,12 +40,39 @@ def get_text(raw_url):
 	return fetched_text
 
 
+# Styling
+hide_menu = """
+<style>
+#MainMenu {
+  visibility: hidden;
+}
+footer {
+  visibility: visible;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  font-weight: 600;
+}
+footer:after {
+  content: 'Develop by Fajar Pambudhi ⚡';
+  display: block;
+  position: relative;
+  color: tomato;
+  padding: 5px 0;
+  top: 3px;
+  font-weight: 800;
+}
+</style>
+"""
+
 #Web Scrapping
 def main():
 
   st.title("Summary and Entity Prediction")
+  st.markdown(hide_menu, unsafe_allow_html=True)
   activities = ["Summarize", "NER Checker", "NER URL"]
   choice = st.sidebar.selectbox("Select Activity", activities)
+
 
   # Summarize text
   if choice == "Summarize":
