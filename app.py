@@ -43,13 +43,13 @@ def get_text(raw_url):
 #Web Scrapping
 def main():
 
-  st.title("Summary and Entity Checker")
+  st.title("Summary and Entity Prediction")
   activities = ["Summarize", "NER Checker", "NER URL"]
   choice = st.sidebar.selectbox("Select Activity", activities)
 
   # Summarize text
   if choice == "Summarize":
-    st.subheader("Summary with NLP")
+    st.subheader("Summary Prediction")
     raw_text = st.text_area("Enter text here")
     summary_choice = st.selectbox(
         "Summary Choice", ["Gensim", "Sumy Lex Rank"])
@@ -64,8 +64,8 @@ def main():
 
   #Entity check from text
   if choice == 'NER Checker':
-    st.subheader("Entity Recognition with Spacy")
-    raw_text = st.text_area("Enter Text Here", "Type Here")
+    st.subheader("Entity Recognition")
+    raw_text = st.text_area("Enter Text Here")
 
     if st.button("Analyze"):
     #NLP
@@ -76,8 +76,8 @@ def main():
 
   # Summarize text from URL
   if choice == 'NER URL':
-    st.subheader("Entity Recognition with Spacy")
-    raw_url = st.text_input("Enter URL Here", "Type here")
+    st.subheader("Analyze Text From URL")
+    raw_url = st.text_input("Enter URL Here")
     text_preview_length = st.slider("Length to Preview", 50, 100)
     if st.button("Analyze"):
       if raw_url != "Type here":
