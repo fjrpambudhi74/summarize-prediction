@@ -7,7 +7,7 @@ This project building a summarization app as well as a named entity checker app 
 - Entity Checker of Text Extracted from a URL
 
 ## Demo
-Check out a live demo and try it for yourself: [demo](https://summarize-prediction.streamlit.app/)
+Check out a live demo and try it for yourself: [demo](https://summarize-prediction-app.streamlit.app/)
 ## Requirements
 ```
 python 3.7.15
@@ -25,7 +25,7 @@ etc
 
 To clone this repository:
 ```
-$ git clone https://github.com/fjrpambudhi74/summarize-prediction-app.git
+$ git clone https://github.com/fjrpambudhi74/summarize-prediction.git
 ```
 To install dependencies:
 ```
