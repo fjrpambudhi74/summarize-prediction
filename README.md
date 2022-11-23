@@ -8,12 +8,6 @@ This project building a summarization app as well as a named entity checker app 
 
 ## Demo
 Check out a live demo and try it for yourself: [demo](https://summarize-prediction.streamlit.app/)
-
-## Screenshots
-![Summarizer](./screenshots/ss1.png)
-![Entity](./screenshots/ss2.png)
-![Url](./screenshots/ss3.png)
-
 ## Requirements
 ```
 python 3.7.15
@@ -31,11 +25,17 @@ etc
 
 To clone this repository:
 ```
-$ git clone https://github.com/msyd1/stroke_prediction_app.git
+$ git clone https://github.com/fjrpambudhi74/summarize-prediction-app.git
 ```
 To install dependencies:
 ```
 $ pip install -r requirements.txt
 ```
+
+## Screenshots
+![Summarizer](./screenshots/ss1.png)
+![Entity](./screenshots/ss2.png)
+![Url](./screenshots/ss3.png)
+
 ##
 Copyright (c) 2022 Fajar Pambudhi
